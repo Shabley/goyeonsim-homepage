@@ -4,9 +4,9 @@ import './styles.css';
 
 const highlights = [
   '한국인공지능인재개발원 교수',
-  '딥컴퍼스 AI 연구소 소장 / Founder',
+  'DeepcompassAI연구소 소장 / Founder',
   '문화예술학 박사 · 단국대학교 일반대학원',
-  '생성형 AI 교육 · AI 에이전트 · DX 컨설팅 전문가',
+  '고연심AI전문가 · AI에이전트 전문가 · 디지털 전환 교육 전문가',
 ];
 
 const services = [
@@ -122,12 +122,12 @@ function App() {
 
       <section className="hero" id="top">
         <div className="heroCopy">
-          <p className="eyebrow">Generative AI · AI Agent · DX Consulting</p>
+          <p className="eyebrow">DeepcompassAI Lab · Generative AI · AI Agent</p>
           <h1>현장에서 바로 쓰는 생성형 AI 교육과 AI 에이전트 설계</h1>
           <p className="lead">
-            고연심은 한국인공지능인재개발원 교수이자 딥컴퍼스 AI 연구소 소장으로,
-            ChatGPT와 최신 생성형 AI 도구를 활용한 업무혁신, AI 에이전트, 콘텐츠 제작,
-            기관 맞춤 DX 교육을 진행합니다.
+            고연심은 한국인공지능인재개발원 교수이자 DeepcompassAI연구소 소장으로,
+            고연심AI전문가·AI에이전트 전문가로 활동하며 ChatGPT와 최신 생성형 AI 도구를 활용한
+            업무혁신, AI 에이전트, 콘텐츠 제작, 기관 맞춤 디지털 전환 교육을 진행합니다.
           </p>
           <div className="ctaRow">
             <a className="button primary" href={inquiryFormUrl} target="_blank" rel="noreferrer">강의 문의하기</a>
@@ -136,7 +136,7 @@ function App() {
         </div>
         <div className="portraitCard">
           <div className="glow" />
-          <img src="/assets/goyeonsim-profile.jpg" alt="AI 전문가 고연심 프로필 사진" />
+          <img src="/assets/goyeonsim-profile.jpg" alt="고연심AI전문가 고연심 AI에이전트 전문가 프로필 사진" />
           <div className="badge">고연심 소장</div>
         </div>
       </section>
@@ -156,7 +156,7 @@ function App() {
         <div className="panel dark">
           <p className="sectionLabel">Profile</p>
           <h2>고연심<br /><small>Koh Yeon Sim</small></h2>
-          <p className="role">교수 · 소장 · 생성형 AI 교육 전문가</p>
+          <p className="role">교수 · 소장 · 고연심AI전문가 · AI에이전트 전문가</p>
           <ul className="checkList">
             {highlights.map((item) => <li key={item}>{item}</li>)}
           </ul>
@@ -245,7 +245,7 @@ function App() {
       <section className="contact" id="contact">
         <div>
           <p className="sectionLabel">Contact</p>
-          <h2>생성형 AI 교육, AI 에이전트, DX 컨설팅을 상담하세요.</h2>
+          <h2>생성형 AI 교육, AI 에이전트, 디지털 전환 교육을 상담하세요.</h2>
           <p>기관의 목적과 수강자 수준에 맞춰 강의 주제, 실습 과제, 결과물, 운영 방식을 함께 설계합니다. 구글폼으로 문의를 남겨주시면 확인 후 연락드립니다.</p>
         </div>
         <div className="contactCard">
