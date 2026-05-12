@@ -2,39 +2,59 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
+const highlights = [
+  '한국인공지능인재개발원 교수',
+  '딥컴퍼스 AI 연구소 소장 / Founder',
+  '문화예술학 박사 · 단국대학교 일반대학원',
+  '생성형 AI 교육 · AI 에이전트 · DX 컨설팅 전문가',
+];
+
 const services = [
   {
-    title: '비즈니스 AI 교육',
-    desc: 'ChatGPT, GPTs 챗봇, AI 프로세스 자동화, 업무 혁신을 실무자가 바로 적용할 수 있게 설계합니다.',
+    title: '생성형 AI 업무혁신',
+    desc: '문서·보고서·반복업무 자동화, 역할 기반 프롬프트 설계, 검증 템플릿과 챗봇 제작까지 실무 중심으로 교육합니다.',
   },
   {
-    title: '생성형 AI 업무 혁신',
-    desc: '문서·보고·반복 업무, 프롬프트 설계, 검증과 실행 템플릿까지 조직 맞춤형으로 구축합니다.',
+    title: 'AI 에이전트·노코드 구축',
+    desc: 'ChatGPT, Claude, Gemini, Perplexity, AI Studio 등 최신 도구를 활용해 업무형 AI 에이전트와 자동화 흐름을 설계합니다.',
   },
   {
-    title: 'AI 콘텐츠 기획·제작',
-    desc: '브랜드 비주얼, 카드뉴스, 뉴스레터, 블로그, 영상·숏폼까지 마케팅 콘텐츠 흐름을 만듭니다.',
+    title: 'AI 콘텐츠·출판 제작',
+    desc: '포스터, 썸네일, 카드뉴스, 전자책, 원고 편집, 표지·내지 제작, 콘텐츠 재가공까지 지식상품화 과정을 안내합니다.',
   },
   {
-    title: 'AI 강사·기관 맞춤 과정',
-    desc: '학교, 공공기관, 기업, 단체의 대상과 목표에 맞춰 강의안·실습·성과물을 중심으로 운영합니다.',
+    title: '기관 맞춤 실습형 워크숍',
+    desc: '행정, 교육, 마케팅, HR 등 직무별 실습 과제를 설계하고 현장에서 바로 쓰는 프롬프트팩과 결과물을 만듭니다.',
   },
 ];
 
-const highlights = [
-  'DeepCompass AI Lab 연구소장',
-  '서경대 혁신지능융합개발원 교수',
-  '서경대 AI 전문가협회 교수위원',
-  'AI 프로세스 연구팀 책임연구원',
+const expertise = [
+  'ChatGPT 업무 활용', 'Claude·Gemini·Perplexity', 'AI 에이전트', 'MCP',
+  '프롬프트 엔지니어링', '문서·보고 자동화', '데이터 분석·시각화', 'AI 콘텐츠 제작',
+  'AI 전자책·출판', '숏폼 영상 기획', 'AI 음악 제작', 'DX 컨설팅'
+];
+
+const books = [
+  '세상을 바꾸는 메타버스 (2021, 공저)',
+  '챗GPT_새로운 글쓰기도구의 탄생과 활용 (2023, 공저)',
+  'ChatGPT4_더욱 강력해진 인공지능의 혁신과 활용 (2023, 공저)',
+  '나도작가되기 (2024)',
+  '블로그 첫 발걸음 입문 단계 1.0 (2024)',
+];
+
+const lectures = [
+  '한양문고 Google AI 도구 특강',
+  '서울시관광협회 생성형 AI 업무 활용 교육',
+  '대전 중구청 생성형 AI 공무원 실무 교육',
+  '한국인공지능인재개발원 생성형 AI 에이전트 마스터 과정',
+  '딥컴퍼스 AI 연구소 생성형 AI 코호트 과정',
+  '반포느티나무쉼터 시니어 AI 활용 교육',
+  '고양신문 AI 마케팅·콘텐츠 교육',
+  '공공기관 AI 디지털 전환 교육 다수',
 ];
 
 const clients = [
-  '중·고등학교', '대학·대학원', '관공서', '공공기관', '기업·HRD', '문화·복지기관', '창업·소상공인 기관'
-];
-
-const curriculum = [
-  'ChatGPT 업무 활용', 'GPTs 챗봇 제작', '프롬프트 엔지니어링', '문서·보고 자동화',
-  '데이터 분석과 시각화', 'AI 콘텐츠 마케팅', '영상·숏폼 기획', '기관 맞춤 교육 설계'
+  '중·고등학교', '대학교·대학원', '관공서', '공공기관', '법인·단체', '기업·HRD', '시니어 기관', '창업·소상공인 기관'
 ];
 
 function App() {
@@ -43,19 +63,21 @@ function App() {
       <nav className="nav">
         <a className="logo" href="#top">고연심<span>AI</span></a>
         <div>
-          <a href="#expertise">전문분야</a>
+          <a href="#profile">프로필</a>
           <a href="#programs">강의</a>
+          <a href="#career">경력</a>
           <a href="#contact">문의</a>
         </div>
       </nav>
 
       <section className="hero" id="top">
         <div className="heroCopy">
-          <p className="eyebrow">AI Expert · AI Edutainer</p>
-          <h1>AI를 쉽고, 재미있고, 바로 쓸 수 있게 만드는 전문가</h1>
+          <p className="eyebrow">Generative AI · AI Agent · DX Consulting</p>
+          <h1>현장에서 바로 쓰는 생성형 AI 교육과 AI 에이전트 설계</h1>
           <p className="lead">
-            고연심은 생성형 AI, ChatGPT, GPTs 챗봇, 업무 자동화와 콘텐츠 기획을 연결해
-            개인과 조직이 실제 성과를 만드는 AI 활용법을 전합니다.
+            고연심은 한국인공지능인재개발원 교수이자 딥컴퍼스 AI 연구소 소장으로,
+            ChatGPT와 최신 생성형 AI 도구를 활용한 업무혁신, AI 에이전트, 콘텐츠 제작,
+            기관 맞춤 DX 교육을 진행합니다.
           </p>
           <div className="ctaRow">
             <a className="button primary" href="mailto:emas7788@naver.com">강의 문의하기</a>
@@ -72,36 +94,45 @@ function App() {
       <section className="intro">
         <div>
           <p className="sectionLabel">Brand Message</p>
-          <h2>AI 교육은 기술 설명이 아니라, 현장의 변화를 만드는 설계입니다.</h2>
+          <h2>기술 설명을 넘어, 업무와 삶에 적용되는 AI 활용법을 전합니다.</h2>
         </div>
         <p>
-          강의는 Easy, Fun, Useful을 기준으로 구성합니다. 복잡한 AI 개념을 쉽게 풀고,
-          참여형 실습으로 재미를 더하며, 수강자가 바로 사용할 수 있는 결과물 중심으로 마무리합니다.
+          메타버스, NFT, 생성형 AI, AI 에이전트까지 20년 이상의 디지털 신기술 강의 경험을 바탕으로
+          공무원, 기업 임직원, 대학생, 시니어, 소상공인 등 다양한 대상에게 쉽고 실용적인 AI 교육을 제공합니다.
         </p>
       </section>
 
-      <section className="grid two" id="expertise">
+      <section className="grid two" id="profile">
         <div className="panel dark">
           <p className="sectionLabel">Profile</p>
-          <h2>고연심</h2>
-          <p className="role">AI 전문가 · AI 엔터테이너</p>
+          <h2>고연심<br /><small>Koh Yeon Sim</small></h2>
+          <p className="role">교수 · 소장 · 생성형 AI 교육 전문가</p>
           <ul className="checkList">
             {highlights.map((item) => <li key={item}>{item}</li>)}
           </ul>
         </div>
         <div className="panel">
-          <p className="sectionLabel">Expertise</p>
-          <h2>강의와 컨설팅 분야</h2>
-          <div className="tagCloud">
-            {curriculum.map((item) => <span key={item}>{item}</span>)}
-          </div>
+          <p className="sectionLabel">Education & Research</p>
+          <h2>학력과 연구</h2>
+          <ul className="checkList normal">
+            <li>문화예술학 박사 Ph.D. in Cultural Arts Studies</li>
+            <li>단국대학교 일반대학원 문화예술학과 박사</li>
+            <li>단국대학교 문화예술대학원 문화관리학과 석사</li>
+            <li>가상미술관의 지속가능성 연구 — 박사학위논문</li>
+            <li>뉴미디어 기반 가상박물관 유형 분석과 미래 방향 — 조형미디어학</li>
+          </ul>
         </div>
       </section>
 
       <section className="services" id="programs">
         <div className="sectionHead">
-          <p className="sectionLabel">Programs</p>
-          <h2>브랜딩 가능한 AI 교육 프로그램</h2>
+          <div>
+            <p className="sectionLabel">Programs</p>
+            <h2>강의와 컨설팅 분야</h2>
+          </div>
+        </div>
+        <div className="tagCloud wide">
+          {expertise.map((item) => <span key={item}>{item}</span>)}
         </div>
         <div className="serviceGrid">
           {services.map((service, idx) => (
@@ -114,9 +145,26 @@ function App() {
         </div>
       </section>
 
+      <section className="grid two" id="career">
+        <div className="panel">
+          <p className="sectionLabel">Books</p>
+          <h2>저서 실적</h2>
+          <ul className="checkList normal">
+            {books.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </div>
+        <div className="panel">
+          <p className="sectionLabel">Lectures</p>
+          <h2>주요 출강 이력</h2>
+          <ul className="checkList normal">
+            {lectures.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </div>
+      </section>
+
       <section className="proof">
         <p className="sectionLabel">For Organizations</p>
-        <h2>학교·공공기관·기업까지, 대상에 맞춘 실전형 AI 강의</h2>
+        <h2>학교·공공기관·기업·단체까지, 대상에 맞춘 실전형 AI 강의</h2>
         <div className="clientList">
           {clients.map((item) => <span key={item}>{item}</span>)}
         </div>
@@ -125,8 +173,8 @@ function App() {
       <section className="contact" id="contact">
         <div>
           <p className="sectionLabel">Contact</p>
-          <h2>AI 교육, 콘텐츠 기획, 조직 맞춤 프로그램을 상담하세요.</h2>
-          <p>브랜드와 교육 목적에 맞춰 강의 주제, 난이도, 실습 결과물, 운영 방식을 함께 설계합니다.</p>
+          <h2>생성형 AI 교육, AI 에이전트, DX 컨설팅을 상담하세요.</h2>
+          <p>기관의 목적과 수강자 수준에 맞춰 강의 주제, 실습 과제, 결과물, 운영 방식을 함께 설계합니다.</p>
         </div>
         <div className="contactCard">
           <a href="tel:01074326833">010-7432-6833</a>
