@@ -61,7 +61,7 @@ function App() {
   return (
     <main>
       <nav className="nav">
-        <a className="logo" href="#top">고연심<span>AI</span></a>
+        <a className="logo" href="#top">Deepcompass<span>AI연구소</span></a>
         <div>
           <a href="#profile">프로필</a>
           <a href="#programs">강의</a>
@@ -87,7 +87,7 @@ function App() {
         <div className="portraitCard">
           <div className="glow" />
           <img src="/assets/goyeonsim-profile.jpg" alt="AI 전문가 고연심 프로필 사진" />
-          <div className="badge">DeepCompass AI Lab</div>
+          <div className="badge">고연심 소장</div>
         </div>
       </section>
 
