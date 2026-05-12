@@ -57,6 +57,51 @@ const clients = [
   '중·고등학교', '대학교·대학원', '관공서', '공공기관', '법인·단체', '기업·HRD', '시니어 기관', '창업·소상공인 기관'
 ];
 
+const insightLinks = [
+  {
+    icon: '▶',
+    title: '유튜브',
+    desc: '영상으로 만나는 생성형 AI 활용법과 강의 콘텐츠',
+    href: 'https://www.youtube.com/@AItoktalk-Ksam',
+    action: '채널 보기',
+  },
+  {
+    icon: 'B',
+    title: '네이버 블로그',
+    desc: 'AI 교육 기록, 강의 소식, 실전 활용 팁을 전합니다.',
+    href: 'https://blog.naver.com/emas7788',
+    action: '블로그 보기',
+  },
+  {
+    icon: 'T',
+    title: '티스토리',
+    desc: '조금 더 깊이 있는 AI 글과 연구 노트를 모았습니다.',
+    href: 'https://deepcompass.tistory.com/',
+    action: '글 읽기',
+  },
+  {
+    icon: '✉',
+    title: '뉴스레터',
+    desc: 'AI 인사이트와 교육 소식을 정기적으로 받아보세요.',
+    href: 'https://maily.so/emas7788/o/',
+    action: '구독하기',
+  },
+  {
+    icon: '◎',
+    title: '인스타그램',
+    desc: '강의 현장, 일상 콘텐츠, 짧은 AI 인사이트를 공유합니다.',
+    href: 'https://www.instagram.com/aimaster_toktalk_ksam/',
+    action: '둘러보기',
+  },
+  {
+    icon: 'P',
+    title: '프로필',
+    desc: '고연심 소장의 강의 프로필과 활동 자료를 확인하세요.',
+    href: '/assets/goyeonsim-profile-portfolio.pptx',
+    action: '프로필 열기',
+  },
+];
+
 function App() {
   return (
     <main>
@@ -170,6 +215,28 @@ function App() {
         <h2>학교·공공기관·기업·단체까지, 대상에 맞춘 실전형 AI 강의</h2>
         <div className="clientList">
           {clients.map((item) => <span key={item}>{item}</span>)}
+        </div>
+      </section>
+
+      <section className="insightHub" id="insights">
+        <div className="sectionHead">
+          <div>
+            <p className="sectionLabel">Insight Hub</p>
+            <h2>AI 인사이트 허브</h2>
+          </div>
+          <p>
+            블로그, 뉴스레터, 영상 채널과 프로필까지 고연심 소장의 AI 콘텐츠와 활동을 한곳에 모았습니다.
+          </p>
+        </div>
+        <div className="insightGrid">
+          {insightLinks.map((item) => (
+            <a className="insightCard" href={item.href} target="_blank" rel="noreferrer" key={item.title}>
+              <span className="insightIcon">{item.icon}</span>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+              <strong>{item.action} →</strong>
+            </a>
+          ))}
         </div>
       </section>
 
