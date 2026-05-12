@@ -68,6 +68,9 @@ h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; col
 .checkList li { line-height: 1.72; color: inherit; }
 .checkList li::before { content: '✓'; color: var(--gold); font-weight: 900; margin-right: 10px; }
 .checkList.normal li { color: #514a58; }
+.educationPanel h2 { margin-bottom: 24px; }
+.educationPanel .checkList { gap: 24px; }
+.educationPanel .checkList li { line-height: 1.9; }
 .tagCloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .tagCloud.wide { margin: 0 0 28px; }
 .tagCloud span, .clientList span { border: 1px solid var(--line); background: rgba(255,255,255,.58); border-radius: 999px; padding: 11px 15px; font-weight: 800; color: #403949; }

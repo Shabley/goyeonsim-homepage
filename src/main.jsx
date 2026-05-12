@@ -111,7 +111,7 @@ function App() {
             {highlights.map((item) => <li key={item}>{item}</li>)}
           </ul>
         </div>
-        <div className="panel">
+        <div className="panel educationPanel">
           <p className="sectionLabel">Education & Research</p>
           <h2>학력과 연구</h2>
           <ul className="checkList normal">
