@@ -16,7 +16,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: radial-gradient(circle at 20% 0%, #eee4ff 0, transparent 35%), var(--bg); }
+body { margin: 0; background: radial-gradient(circle at 20% 0%, #eee4ff 0, transparent 35%), var(--bg); word-break: keep-all; overflow-wrap: break-word; }
 a { color: inherit; text-decoration: none; }
 main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
 
@@ -33,7 +33,7 @@ main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
 .eyebrow, .sectionLabel { color: var(--violet); font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; font-size: 13px; margin: 0 0 14px; }
 h1 { font-size: clamp(44px, 6vw, 82px); line-height: 0.97; letter-spacing: -0.075em; margin: 0; max-width: 780px; }
 h2 { font-size: clamp(30px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.055em; margin: 0; }
-h3 { font-size: 24px; letter-spacing: -0.035em; margin: 18px 0 12px; }
+h3 { font-size: 24px; letter-spacing: -0.035em; margin: 18px 0 12px; line-height: 1.25; }
 p { line-height: 1.75; }
 .lead { font-size: 20px; color: #514a58; max-width: 680px; margin: 28px 0 0; }
 .ctaRow { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 36px; }
@@ -65,7 +65,7 @@ h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; col
 .sectionHead { display: flex; justify-content: space-between; gap: 30px; align-items: end; margin-bottom: 30px; }
 .serviceGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .service span { color: var(--gold); font-weight: 900; }
-.service p { color: var(--muted); margin: 0; }
+.service p { color: var(--muted); margin: 0; line-height: 1.68; }
 
 .proof { margin: 26px 0 80px; text-align: center; background: linear-gradient(135deg, rgba(255,255,255,.78), rgba(239,232,255,.78)); }
 .proof h2 { max-width: 760px; margin: 0 auto; }
@@ -82,5 +82,6 @@ h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; col
   .hero, .intro, .grid.two, .contact { grid-template-columns: 1fr; gap: 30px; }
   .hero { padding-top: 36px; }
   .serviceGrid { grid-template-columns: 1fr; }
+  .service h3 { font-size: 23px; }
   .panel, .service, .proof, .contactCard { padding: 26px; border-radius: 24px; }
 }
