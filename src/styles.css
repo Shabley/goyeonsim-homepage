@@ -89,8 +89,8 @@ h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; col
 .service p { color: var(--muted); margin: 0; line-height: 1.68; }
 
 .proof { margin: 26px 0 80px; text-align: center; background: linear-gradient(135deg, rgba(255,255,255,.84), rgba(239,232,255,.78) 45%, rgba(216,244,231,.68)); }
-.proof h2 { max-width: 760px; margin: 0 auto; }
-.clientList { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; }
+.proof h2 { max-width: 820px; margin: 0 auto; line-height: 1.24; }
+.clientList { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 42px; }
 
 .contact { padding-bottom: 110px; }
 .contactCard { display: grid; gap: 14px; align-self: stretch; align-content: center; background: linear-gradient(135deg, #18151f, #4c2f7f 58%, #8c6fe8); color: white; }
