@@ -146,14 +146,14 @@ function App() {
       </section>
 
       <section className="grid two" id="career">
-        <div className="panel">
+        <div className="panel detailPanel">
           <p className="sectionLabel">Books</p>
           <h2>저서 실적</h2>
           <ul className="checkList normal">
             {books.map((item) => <li key={item}>{item}</li>)}
           </ul>
         </div>
-        <div className="panel">
+        <div className="panel detailPanel">
           <p className="sectionLabel">Lectures</p>
           <h2>주요 출강 이력</h2>
           <ul className="checkList normal">
