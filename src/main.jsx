@@ -61,7 +61,10 @@ function App() {
   return (
     <main>
       <nav className="nav">
-        <a className="logo" href="#top">Deepcompass<span>AI연구소</span></a>
+        <a className="logo" href="#top">
+          <img src="/assets/deep-compass-logo.jpg" alt="Deep Compass AI Lab 로고" />
+          <span>DeepcompassAI연구소</span>
+        </a>
         <div>
           <a href="#profile">프로필</a>
           <a href="#programs">강의</a>

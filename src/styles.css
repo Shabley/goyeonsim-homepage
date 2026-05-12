@@ -36,8 +36,9 @@ main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
   display: flex; align-items: center; justify-content: space-between;
   padding: 20px 0; backdrop-filter: blur(18px);
 }
-.logo { font-size: 22px; font-weight: 900; letter-spacing: -0.04em; }
-.logo span { color: var(--violet); margin-left: 4px; }
+.logo { display: inline-flex; align-items: center; gap: 12px; font-size: 21px; font-weight: 900; letter-spacing: -0.04em; }
+.logo img { width: 44px; height: 44px; border-radius: 14px; object-fit: contain; background: rgba(255,255,255,.72); box-shadow: 0 10px 26px rgba(24,21,31,.08); }
+.logo span { color: var(--purple); margin-left: 0; }
 .nav div { display: flex; gap: 24px; font-weight: 700; color: #4b4652; }
 
 .hero { min-height: 78vh; display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 72px; align-items: center; padding: 54px 0 96px; }
@@ -102,6 +103,8 @@ h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; col
 @media (max-width: 900px) {
   main { width: min(100% - 24px, 680px); }
   .nav div { display: none; }
+  .logo { font-size: 18px; gap: 10px; }
+  .logo img { width: 38px; height: 38px; border-radius: 12px; }
   .hero, .intro, .grid.two, .contact { grid-template-columns: 1fr; gap: 42px; }
   .hero { padding-top: 42px; padding-bottom: 84px; }
   .intro, .services, .contact { padding-top: 84px; padding-bottom: 84px; }
