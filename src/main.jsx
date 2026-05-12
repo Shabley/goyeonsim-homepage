@@ -252,7 +252,7 @@ function App() {
           <a href={inquiryFormUrl} target="_blank" rel="noreferrer">강의 문의하기</a>
           <a href="tel:01074326833">010-7432-6833</a>
           <a href="mailto:emas7788@naver.com">emas7788@naver.com</a>
-          <small>구글폼 · 전화 · 이메일 문의 가능</small>
+          <small>구글폼 문의 · 전화 · 이메일</small>
         </div>
       </section>
     </main>

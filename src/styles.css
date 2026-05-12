@@ -113,7 +113,7 @@ h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; col
 .contact { padding-bottom: 120px; }
 .contactCard { display: grid; gap: 22px; align-self: stretch; align-content: center; background: linear-gradient(135deg, #18151f, #4c2f7f 58%, #8c6fe8); color: white; }
 .contactCard a { font-size: clamp(24px, 4vw, 40px); font-weight: 900; letter-spacing: -0.05em; }
-.contactCard small { color: rgba(255,255,255,.62); font-weight: 700; }
+.contactCard small { color: rgba(255,255,255,.74); font-size: 15px; font-weight: 800; letter-spacing: -0.01em; }
 
 @media (max-width: 900px) {
   main { width: min(100% - 24px, 680px); }
