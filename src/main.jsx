@@ -86,7 +86,7 @@ function App() {
         </div>
         <div className="portraitCard">
           <div className="glow" />
-          <img src="/assets/goyeonsim-profile.png" alt="AI 전문가 고연심 프로필 사진" />
+          <img src="/assets/goyeonsim-profile.jpg" alt="AI 전문가 고연심 프로필 사진" />
           <div className="badge">DeepCompass AI Lab</div>
         </div>
       </section>
