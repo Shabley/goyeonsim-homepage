@@ -57,6 +57,8 @@ const clients = [
   '중·고등학교', '대학교·대학원', '관공서', '공공기관', '법인·단체', '기업·HRD', '시니어 기관', '창업·소상공인 기관'
 ];
 
+const inquiryFormUrl = 'https://forms.gle/GStfpESe4qdT2cKJA';
+
 const insightLinks = [
   {
     icon: 'P',
@@ -128,7 +130,7 @@ function App() {
             기관 맞춤 DX 교육을 진행합니다.
           </p>
           <div className="ctaRow">
-            <a className="button primary" href="mailto:emas7788@naver.com">강의 문의하기</a>
+            <a className="button primary" href={inquiryFormUrl} target="_blank" rel="noreferrer">강의 문의하기</a>
             <a className="button ghost" href="tel:01074326833">010-7432-6833</a>
           </div>
         </div>
@@ -244,12 +246,13 @@ function App() {
         <div>
           <p className="sectionLabel">Contact</p>
           <h2>생성형 AI 교육, AI 에이전트, DX 컨설팅을 상담하세요.</h2>
-          <p>기관의 목적과 수강자 수준에 맞춰 강의 주제, 실습 과제, 결과물, 운영 방식을 함께 설계합니다.</p>
+          <p>기관의 목적과 수강자 수준에 맞춰 강의 주제, 실습 과제, 결과물, 운영 방식을 함께 설계합니다. 구글폼으로 문의를 남겨주시면 확인 후 연락드립니다.</p>
         </div>
         <div className="contactCard">
+          <a href={inquiryFormUrl} target="_blank" rel="noreferrer">강의 문의하기</a>
           <a href="tel:01074326833">010-7432-6833</a>
           <a href="mailto:emas7788@naver.com">emas7788@naver.com</a>
-          <small>강의 · 컨설팅 · 기관 맞춤 과정 문의</small>
+          <small>구글폼 · 전화 · 이메일 문의 가능</small>
         </div>
       </section>
     </main>
