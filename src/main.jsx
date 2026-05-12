@@ -59,11 +59,25 @@ const clients = [
 
 const insightLinks = [
   {
+    icon: 'P',
+    title: '프로필',
+    desc: '고연심 소장의 강의 프로필과 활동 자료를 먼저 확인하세요.',
+    href: '/assets/goyeonsim-profile-portfolio.pptx',
+    action: '프로필 열기',
+  },
+  {
     icon: '▶',
     title: '유튜브',
     desc: '영상으로 만나는 생성형 AI 활용법과 강의 콘텐츠',
     href: 'https://www.youtube.com/@AItoktalk-Ksam',
     action: '채널 보기',
+  },
+  {
+    icon: '✉',
+    title: '뉴스레터',
+    desc: 'AI 인사이트와 교육 소식을 정기적으로 받아보세요.',
+    href: 'https://maily.so/emas7788/o/',
+    action: '구독하기',
   },
   {
     icon: 'B',
@@ -80,25 +94,11 @@ const insightLinks = [
     action: '글 읽기',
   },
   {
-    icon: '✉',
-    title: '뉴스레터',
-    desc: 'AI 인사이트와 교육 소식을 정기적으로 받아보세요.',
-    href: 'https://maily.so/emas7788/o/',
-    action: '구독하기',
-  },
-  {
     icon: '◎',
     title: '인스타그램',
     desc: '강의 현장, 일상 콘텐츠, 짧은 AI 인사이트를 공유합니다.',
     href: 'https://www.instagram.com/aimaster_toktalk_ksam/',
     action: '둘러보기',
-  },
-  {
-    icon: 'P',
-    title: '프로필',
-    desc: '고연심 소장의 강의 프로필과 활동 자료를 확인하세요.',
-    href: '/assets/goyeonsim-profile-portfolio.pptx',
-    action: '프로필 열기',
   },
 ];
 
