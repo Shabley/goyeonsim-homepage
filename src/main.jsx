@@ -123,11 +123,11 @@ function App() {
       <section className="hero" id="top">
         <div className="heroCopy">
           <p className="eyebrow">DeepcompassAI Lab · Generative AI · AI Agent</p>
-          <h1>현장에서 바로 쓰는 생성형 AI 교육과 AI 에이전트 설계</h1>
+          <h1>고연심 AI 전문가의 생성형 AI 교육과 ChatGPT 강의</h1>
           <p className="lead">
-            고연심은 한국인공지능인재개발원 교수이자 DeepcompassAI연구소 소장으로,
-            고연심AI전문가·AI에이전트 전문가로 활동하며 ChatGPT와 최신 생성형 AI 도구를 활용한
-            업무혁신, AI 에이전트, 콘텐츠 제작, 기관 맞춤 디지털 전환 교육을 진행합니다.
+            고연심은 한국인공지능인재개발원 교수이자 DeepcompassAI연구소 소장입니다.
+            고연심AI전문가·AI에이전트 전문가로서 ChatGPT와 최신 생성형 AI 도구를 활용한
+            업무혁신, AI 에이전트 설계, 콘텐츠 제작, 기관 맞춤 디지털 전환 교육을 진행합니다.
           </p>
           <div className="ctaRow">
             <a className="button primary" href={inquiryFormUrl} target="_blank" rel="noreferrer">강의 문의하기</a>
@@ -144,7 +144,7 @@ function App() {
       <section className="intro">
         <div>
           <p className="sectionLabel">Brand Message</p>
-          <h2>기술 설명을 넘어, 업무와 삶에 적용되는 AI 활용법을 전합니다.</h2>
+          <h2>고연심 공식 홈페이지에서 AI 교육, ChatGPT 강의, AI 에이전트 활용법을 전합니다.</h2>
         </div>
         <p>
           메타버스, NFT, 생성형 AI, AI 에이전트까지 20년 이상의 디지털 신기술 강의 경험을 바탕으로
@@ -214,7 +214,7 @@ function App() {
 
       <section className="proof">
         <p className="sectionLabel">For Organizations</p>
-        <h2>학교·공공기관·기업·단체까지, 대상에 맞춘 실전형 AI 강의</h2>
+        <h2>고연심 AI 전문가의 학교·공공기관·기업·단체 맞춤 실전형 AI 강의</h2>
         <div className="clientList">
           {clients.map((item) => <span key={item}>{item}</span>)}
         </div>
@@ -245,7 +245,7 @@ function App() {
       <section className="contact" id="contact">
         <div>
           <p className="sectionLabel">Contact</p>
-          <h2>생성형 AI 교육, AI 에이전트, 디지털 전환 교육을 상담하세요.</h2>
+          <h2>고연심 AI 전문가의 생성형 AI 교육, AI 에이전트, 디지털 전환 교육을 상담하세요.</h2>
           <p>기관의 목적과 수강자 수준에 맞춰 강의 주제, 실습 과제, 결과물, 운영 방식을 함께 설계합니다. 구글폼으로 문의를 남겨주시면 확인 후 연락드립니다.</p>
         </div>
         <div className="contactCard">
