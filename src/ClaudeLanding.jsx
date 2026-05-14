@@ -62,10 +62,11 @@ function ClaudeLanding() {
       <section className="claudeHero" id="top">
         <div className="heroText">
           <p className="pill">2026 Claude 완전정복 · 고연심 소장 직강</p>
-          <h1>ChatGPT만 쓰고 있다면,<br />아직 AI의 절반만 쓰는 중입니다.</h1>
+          <p className="heroKicker">CHAT TO WORK OS</p>
+          <h1>Claude는 이제<br />답변이 아니라,<br />일을 합니다.</h1>
           <p className="heroLead">
             맞춤설정부터 Projects, Memory, Skills, Artifacts, Deep Research, Co-work까지 —
-            Claude를 단순 채팅창이 아닌 <strong>나만의 AI 업무 시스템</strong>으로 만드는 실전 강의입니다.
+            Claude를 단순 채팅창이 아닌 <strong>나만의 AI 업무 시스템</strong>으로 만드는 프리미엄 실전 강의입니다.
           </p>
           <div className="heroActions">
             <a className="button primary" href={inquiryFormUrl} target="_blank" rel="noreferrer">Claude 완전정복 신청하기</a>
@@ -80,13 +81,18 @@ function ClaudeLanding() {
         </div>
       </section>
 
+      <section className="manifestoBand">
+        <span>AI를 잘 쓰는 사람과</span>
+        <strong>AI 시스템을 가진 사람은 다릅니다.</strong>
+      </section>
+
       <section className="statGrid">
         {stats.map(([num, label]) => <div className="stat" key={num}><strong>{num}</strong><span>{label}</span></div>)}
       </section>
 
       <section className="problemSection">
         <p className="sectionLabel">Problem</p>
-        <h2>AI를 쓰고 있는데도, 왜 아직 일이 줄지 않을까요?</h2>
+        <h2>AI를 쓰고 있는데도,<br />왜 아직 일이 줄지 않을까요?</h2>
         <p className="sectionLead">Claude를 그냥 질문창처럼만 쓰면 결국 ‘복붙 도구’에서 멈춥니다. 진짜 차이는 기능을 하나의 업무 흐름으로 연결했을 때 시작됩니다.</p>
         <div className="painGrid">
           {pains.map(([title, desc]) => <article className="painCard" key={title}><h3>{title}</h3><p>{desc}</p></article>)}
@@ -108,7 +114,7 @@ function ClaudeLanding() {
         <div className="sectionHead">
           <div>
             <p className="sectionLabel">Curriculum</p>
-            <h2>10단계 Claude Work OS 커리큘럼</h2>
+            <h2>프롬프트가 아니라,<br />업무 구조를 배웁니다.</h2>
           </div>
           <p>초보자도 따라올 수 있게 환경 세팅부터 고급 자동화까지 순서대로 설계했습니다.</p>
         </div>
