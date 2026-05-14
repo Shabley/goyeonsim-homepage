@@ -3,10 +3,10 @@ import React from 'react';
 const inquiryFormUrl = 'https://forms.gle/GStfpESe4qdT2cKJA';
 
 const stats = [
+  ['10단계', 'Claude Work OS 커리큘럼'],
   ['8대 핵심 기능', '맞춤설정부터 Co-work까지'],
   ['90%', '반복 설명 시간 절감 목표'],
-  ['Work OS', '채팅을 넘어 업무 시스템으로'],
-  ['실습 중심', '강의안·리서치·문서 자동화'],
+  ['기관 맞춤', '기업·공공기관·학교 특강 가능'],
 ];
 
 const pains = [
@@ -48,6 +48,7 @@ function ClaudeLanding() {
 
   return (
     <main className="claudePage">
+      <div className="noticeBar">📢 2026 Claude 완전정복 강의 · 기관/기업/학교 맞춤 특강 및 단체교육 상담 가능</div>
       <nav className="claudeNav">
         <a href="/" className="claudeLogo">DeepcompassAI연구소</a>
         <div>
@@ -132,6 +133,20 @@ function ClaudeLanding() {
         </div>
         <div className="targetList">
           <span>AI 강사·컨설턴트</span><span>1인 사업가</span><span>마케터·기획자</span><span>공공기관·기업 실무자</span><span>콘텐츠 제작자</span><span>강의안·보고서 작성이 많은 분</span>
+        </div>
+      </section>
+
+      <section className="deliverySection">
+        <div>
+          <p className="sectionLabel">For Organizations</p>
+          <h2>귀 기관의 수준과 목적에 맞게 Claude 강의를 설계합니다.</h2>
+          <p>학교, 기업, 공공기관, 평생교육원, 도서관, 협회 교육까지 대상과 시간에 맞춰 실습형 커리큘럼으로 운영할 수 있습니다.</p>
+        </div>
+        <div className="deliveryGrid">
+          <article><strong>🏢 기업·기관</strong><span>보고서·기획서·업무 자동화 중심</span></article>
+          <article><strong>🏫 학교·대학</strong><span>AI 리터러시와 과제·연구 활용 중심</span></article>
+          <article><strong>📚 평생교육·도서관</strong><span>초보자도 따라오는 실습형 구성</span></article>
+          <article><strong>🌐 온·오프라인</strong><span>대면 특강, Zoom, VOD 연계 가능</span></article>
         </div>
       </section>
 

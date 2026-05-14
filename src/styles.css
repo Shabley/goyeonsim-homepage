@@ -220,3 +220,11 @@ h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; col
   .problemSection, .curriculum, .compareSection, .reviewSection, .faqSection { padding: 76px 0; }
   .solutionBand { padding: 34px; border-radius: 28px; }
 }
+.noticeBar { margin-top: 14px; padding: 12px 18px; border-radius: 999px; background: linear-gradient(135deg, rgba(76,47,127,.95), rgba(124,58,237,.92)); color: white; font-weight: 900; text-align: center; box-shadow: 0 16px 40px rgba(76,47,127,.2); }
+.deliverySection { display: grid; grid-template-columns: .9fr 1.1fr; gap: 42px; align-items: center; padding: 64px; margin: 0 0 96px; border-radius: 36px; background: rgba(255,255,255,.78); border: 1px solid rgba(255,255,255,.82); box-shadow: 0 18px 50px rgba(17,24,39,.08); }
+.deliverySection p { color: #6b7280; font-size: 18px; }
+.deliveryGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.deliveryGrid article { display: grid; gap: 8px; padding: 22px; border-radius: 22px; background: rgba(124,58,237,.08); }
+.deliveryGrid strong { color: #4c1d95; font-size: 19px; }
+.deliveryGrid span { color: #6b7280; font-weight: 700; line-height: 1.6; }
+@media (max-width: 900px) { .noticeBar { border-radius: 20px; line-height: 1.55; } .deliverySection, .deliveryGrid { grid-template-columns: 1fr; } .deliverySection { padding: 30px; border-radius: 28px; } }
