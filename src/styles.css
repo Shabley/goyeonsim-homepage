@@ -69,7 +69,7 @@ p { line-height: 1.86; }
 h2 small { display: inline-block; font-size: .42em; letter-spacing: -0.03em; color: inherit; opacity: .72; margin-top: 8px; }
 .checkList { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
 .checkList li { line-height: 1.72; color: inherit; }
-.checkList li::before { content: '??; color: var(--gold); font-weight: 900; margin-right: 10px; }
+.checkList li::before { content: '✓'; color: var(--gold); font-weight: 900; margin-right: 10px; }
 .checkList.normal li { color: #514a58; }
 .educationPanel h2, .detailPanel h2 { margin-bottom: 24px; }
 .educationPanel .checkList, .detailPanel .checkList { gap: 24px; }
