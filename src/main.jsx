@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
+import ClaudeLanding from './ClaudeLanding.jsx';
 
 const highlights = [
   '한국인공지능인재개발원 교수',
@@ -259,4 +260,6 @@ function App() {
   );
 }
 
-createRoot(document.getElementById('root')).render(<App />);
+const isClaudeLanding = window.location.pathname.startsWith('/claude');
+
+createRoot(document.getElementById('root')).render(isClaudeLanding ? <ClaudeLanding /> : <App />);
