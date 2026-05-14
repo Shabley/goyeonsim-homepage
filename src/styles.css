@@ -349,3 +349,119 @@ body:has(.claudePage) {
   }
 }
 
+
+/* Claude landing color refresh: #f2f2f2 / #716ded / #34c785 */
+body:has(.claudePage) {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(113,109,237,.22), transparent 34%),
+    radial-gradient(circle at 86% 12%, rgba(52,199,133,.18), transparent 32%),
+    linear-gradient(180deg, #f2f2f2 0%, #ffffff 46%, #f2f2f2 100%);
+}
+.claudePage {
+  --premium-black: #141428;
+  --premium-ink: #141428;
+  --premium-muted: rgba(20,20,40,.68);
+  --premium-line: rgba(113,109,237,.18);
+  --accent-purple: #716ded;
+  --accent-green: #34c785;
+  color: #141428;
+}
+.claudePage .noticeBar {
+  background: rgba(113,109,237,.08);
+  border: 1px solid rgba(113,109,237,.22);
+  color: #716ded;
+  box-shadow: 0 16px 40px rgba(113,109,237,.10);
+}
+.claudePage .claudeNav,
+.claudePage .claudeLogo,
+.claudePage .claudeHero { color: #141428; }
+.claudePage .claudeNav div { color: rgba(20,20,40,.62); }
+.claudePage .navCta,
+.claudePage .primary {
+  background: linear-gradient(135deg, #716ded, #34c785);
+  color: white;
+  box-shadow: 0 22px 54px rgba(113,109,237,.22);
+}
+.claudePage .pill {
+  background: rgba(113,109,237,.09);
+  border-color: rgba(113,109,237,.2);
+  color: #716ded;
+}
+.heroKicker { color: #716ded; }
+.claudePage .heroLead { color: rgba(20,20,40,.68); }
+.claudePage .heroLead strong { color: #716ded; }
+.claudePage .ghost {
+  color: #716ded;
+  border-color: rgba(113,109,237,.22);
+  background: rgba(255,255,255,.7);
+}
+.claudePage .trustLine { color: rgba(20,20,40,.58); }
+.claudePage .heroVisual {
+  background:
+    radial-gradient(circle at 20% 14%, rgba(52,199,133,.42), transparent 36%),
+    radial-gradient(circle at 80% 88%, rgba(113,109,237,.42), transparent 38%),
+    linear-gradient(145deg, #f2f2f2, #ffffff 48%, #d9d8ff);
+  box-shadow: 0 36px 95px rgba(113,109,237,.20);
+}
+.claudePage .heroVisual::before { color: #716ded; mix-blend-mode: normal; }
+.claudePage .screenCard {
+  background: rgba(255,255,255,.88);
+  color: #141428;
+  border: 1px solid rgba(113,109,237,.18);
+}
+.claudePage .screenCard span { color: rgba(20,20,40,.56); }
+.manifestoBand {
+  color: #141428;
+  border-top-color: rgba(113,109,237,.18);
+  border-bottom-color: rgba(113,109,237,.18);
+}
+.manifestoBand span { color: #34c785; }
+.manifestoBand strong { color: #716ded; }
+.claudePage .stat {
+  background: rgba(255,255,255,.72);
+  border-color: rgba(113,109,237,.16);
+  color: #141428;
+}
+.claudePage .stat:hover { background: rgba(113,109,237,.08); }
+.claudePage .stat strong { color: #716ded; }
+.claudePage .stat span { color: rgba(20,20,40,.62); }
+.claudePage .sectionLabel { color: #34c785; }
+.claudePage .painCard,
+.claudePage .module,
+.claudePage .review,
+.claudePage .compareCard,
+.claudePage .bonusSection,
+.claudePage .proofSection,
+.claudePage .deliverySection,
+.claudePage .faqSection details {
+  background: rgba(255,255,255,.78);
+  border-color: rgba(113,109,237,.14);
+}
+.claudePage .solutionBand,
+.claudePage .compareCard.strong,
+.claudePage .finalCta {
+  background: linear-gradient(135deg, #716ded, #5f5ae0 56%, #34c785);
+  color: white;
+  border: 0;
+}
+.claudePage .solutionBand .sectionLabel,
+.claudePage .finalCta .pill { color: white; border-color: rgba(255,255,255,.28); background: rgba(255,255,255,.12); }
+.claudePage .solutionBand p:last-child,
+.claudePage .compareCard.strong li,
+.claudePage .finalCta p { color: rgba(255,255,255,.82); }
+.claudePage .module span,
+.targetList span,
+.bonusSection li,
+.deliveryGrid article {
+  background: rgba(52,199,133,.10);
+  color: #188957;
+}
+.claudePage .review strong,
+.deliveryGrid strong { color: #716ded; }
+@media (max-width: 900px) {
+  body:has(.claudePage) {
+    background:
+      radial-gradient(circle at 12% 0%, rgba(113,109,237,.20), transparent 32%),
+      linear-gradient(180deg, #f2f2f2 0%, #ffffff 48%, #f2f2f2 100%);
+  }
+}
