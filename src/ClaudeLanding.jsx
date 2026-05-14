@@ -63,7 +63,7 @@ function ClaudeLanding() {
         <div className="heroText">
           <p className="pill">2026 Claude 완전정복 · 고연심 소장 직강</p>
           <p className="heroKicker">CHAT TO WORK OS</p>
-          <h1><span>Claude는 이제</span><span>답변이 아니라,</span><span>일을 합니다.</span></h1>
+          <h1><span>Claude는 이제</span><span>답변이 아니라 일을 합니다.</span></h1>
           <p className="heroLead">
             맞춤설정부터 Projects, Memory, Skills, Artifacts, Deep Research, Co-work까지 —
             Claude를 단순 채팅창이 아닌 <strong>나만의 AI 업무 시스템</strong>으로 만드는 프리미엄 실전 강의입니다.
