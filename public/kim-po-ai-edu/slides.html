@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김포시청 AI교육 강의자료 슬라이드 보기</title>
+  <meta name="description" content="김포시청 AI 에이전트 & 바이브코딩 실무 과정 강의자료 슬라이드 보기 페이지입니다." />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Pretendard, sans-serif; background: #0f2345; color: #fff; }
+    .topbar { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 20px; background: rgba(255,255,255,.96); color: #172033; border-bottom: 1px solid #e6eaf2; }
+    .title { min-width: 0; }
+    .title b { display: block; font-size: 16px; letter-spacing: -.03em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .title span { display: block; margin-top: 3px; color: #667085; font-size: 12px; }
+    .actions { display: flex; gap: 8px; flex: none; }
+    a { color: inherit; text-decoration: none; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; padding: 0 14px; border-radius: 12px; font-weight: 800; font-size: 14px; background: #1d4ed8; color: #fff; }
+    .btn.ghost { background: #eef4ff; color: #1d4ed8; border: 1px solid #d7e5ff; }
+    .viewer { width: 100%; height: calc(100vh - 64px); background: #111827; }
+    iframe { width: 100%; height: 100%; border: 0; display: block; background: #111827; }
+    .fallback { display: none; padding: 30px; text-align: center; line-height: 1.7; }
+    @media (max-width: 640px) {
+      .topbar { height: auto; min-height: 76px; align-items: flex-start; flex-direction: column; padding: 12px 14px; }
+      .actions { width: 100%; }
+      .btn { flex: 1; height: 38px; font-size: 13px; }
+      .viewer { height: calc(100vh - 104px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">
+      <b>김포시청 AI교육 강의자료</b>
+      <span>AI 에이전트 & 바이브코딩 실무 과정 · 2026.05.21</span>
+    </div>
+    <nav class="actions">
+      <a class="btn ghost" href="/kim-po-ai-edu/">교육 페이지</a>
+      <a class="btn" href="/assets/gimpo-ai-agent-vibecoding-practice-materials.pdf" download>PDF 다운로드</a>
+    </nav>
+  </header>
+
+  <main class="viewer">
+    <iframe src="/assets/gimpo-ai-agent-vibecoding-practice-materials.pdf#view=FitH" title="김포시청 AI교육 강의자료 PDF 슬라이드"></iframe>
+    <div class="fallback">
+      PDF가 보이지 않으면 <a class="btn" href="/assets/gimpo-ai-agent-vibecoding-practice-materials.pdf">여기에서 열기</a>를 눌러주세요.
+    </div>
+  </main>
+</body>
+</html>
