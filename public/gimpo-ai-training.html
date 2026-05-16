@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김포시청 임직원 AI 에이전트 실무 교육 | 고연심 AI 전문가</title>
+  <meta name="description" content="2026년 5월 21일 김포시청 임직원 대상 6시간 AI 에이전트·생성형 AI 업무혁신 실무 교육 과정 안내 페이지입니다." />
+  <meta property="og:title" content="김포시청 임직원 AI 에이전트 실무 교육" />
+  <meta property="og:description" content="ChatGPT, Claude, Gemini, GenSpark와 AI 에이전트를 활용한 공공기관 맞춤형 6시간 실습 교육." />
+  <meta property="og:image" content="https://goyeonsim-homepage.vercel.app/portfolio-photo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0d1b2e;
+      --blue: #183a5a;
+      --cream: #f6f1e8;
+      --gold: #c9a84c;
+      --gold2: #b8922e;
+      --ink: #102033;
+      --muted: #6c7683;
+      --line: rgba(201,168,76,.26);
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--ink); background: var(--cream); word-break: keep-all; overflow-wrap: break-word; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .nav { position: sticky; top: 0; z-index: 20; background: rgba(13,27,46,.86); color: rgba(246,241,232,.78); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(201,168,76,.18); }
+    .nav .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 24px; }
+    .brand { font-family: 'Noto Serif KR', serif; color: var(--gold); font-weight: 700; letter-spacing: -.02em; }
+    .navlinks { display: flex; gap: 24px; font-size: 14px; font-weight: 700; }
+    .navlinks a:hover { color: var(--gold); }
+    .hero { background: radial-gradient(circle at 85% 10%, rgba(201,168,76,.18), transparent 34%), linear-gradient(135deg, #0d1b2e 0%, #142b46 58%, #0a1423 100%); color: var(--cream); padding: 88px 0 70px; position: relative; overflow: hidden; }
+    .hero:before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,.07) 1px, transparent 1px); background-size: 64px 64px; opacity: .75; }
+    .hero .wrap { position: relative; display: grid; grid-template-columns: 1.16fr .84fr; gap: 64px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 12px; color: var(--gold); font-size: 13px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 30px; }
+    .eyebrow:before { content: ''; width: 34px; height: 1px; background: var(--gold); }
+    h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(42px, 6vw, 82px); line-height: 1.16; letter-spacing: -.055em; margin: 0; font-weight: 700; }
+    .subtitle { font-family: 'Noto Serif KR', serif; font-size: clamp(20px, 2.8vw, 32px); line-height: 1.58; margin: 30px 0 0; color: rgba(246,241,232,.82); font-weight: 300; }
+    .heroMeta { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin-top: 44px; }
+    .metaCard { border: 1px solid rgba(201,168,76,.28); background: rgba(255,255,255,.05); padding: 18px 20px; }
+    .metaCard b { display: block; color: var(--gold); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 8px; }
+    .metaCard span { font-size: 16px; color: rgba(246,241,232,.88); line-height: 1.5; }
+    .portrait { position: relative; }
+    .portrait:before { content: ''; position: absolute; inset: -16px 16px 16px -16px; border: 1px solid rgba(201,168,76,.28); }
+    .portrait img { position: relative; width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top center; box-shadow: 0 28px 80px rgba(0,0,0,.34); }
+    .section { padding: 92px 0; }
+    .section.dark { background: var(--blue); color: var(--cream); }
+    .section.navy { background: var(--navy); color: var(--cream); }
+    .sectionTitle { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
+    .label { color: var(--gold2); font-size: 12px; font-weight: 900; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 14px; }
+    .dark .label, .navy .label { color: var(--gold); }
+    h2 { font-family: 'Noto Serif KR', serif; font-size: clamp(30px, 4vw, 50px); line-height: 1.28; letter-spacing: -.045em; margin: 0; }
+    .lead { max-width: 560px; color: var(--muted); font-size: 17px; line-height: 1.9; margin: 0; }
+    .dark .lead, .navy .lead { color: rgba(246,241,232,.6); }
+    .overview { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; border: 1px solid var(--line); background: var(--line); }
+    .overview div { background: var(--white); padding: 30px 24px; min-height: 132px; }
+    .overview b { display: block; color: var(--gold2); font-size: 13px; letter-spacing: .08em; margin-bottom: 12px; }
+    .overview span { font-size: 18px; font-weight: 800; line-height: 1.5; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: rgba(201,168,76,.22); border: 1px solid rgba(201,168,76,.22); }
+    .card { background: #fff; padding: 36px 32px; }
+    .card .num { font-family: 'Noto Serif KR', serif; color: var(--gold2); font-size: 40px; font-weight: 700; margin-bottom: 18px; }
+    .card h3 { margin: 0 0 18px; font-size: 21px; letter-spacing: -.03em; }
+    .card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; color: #5c6673; line-height: 1.7; }
+    .card li:before { content: '•'; color: var(--gold2); font-weight: 900; margin-right: 8px; }
+    .timeline { display: grid; gap: 16px; }
+    .session { display: grid; grid-template-columns: 150px 1fr 120px; gap: 28px; align-items: start; padding: 28px; border: 1px solid rgba(201,168,76,.22); background: rgba(255,255,255,.045); }
+    .time { color: var(--gold); font-weight: 900; letter-spacing: .02em; }
+    .session h3 { margin: 0 0 12px; color: var(--cream); font-size: 21px; }
+    .session p { margin: 0; color: rgba(246,241,232,.66); line-height: 1.8; }
+    .badge { justify-self: end; border: 1px solid rgba(201,168,76,.36); color: var(--gold); padding: 9px 13px; border-radius: 999px; font-size: 12px; font-weight: 800; }
+    .outputs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .output { border: 1px solid rgba(201,168,76,.28); padding: 34px; background: rgba(255,255,255,.04); }
+    .output b { display: block; color: var(--gold); font-size: 40px; font-family: 'Noto Serif KR', serif; margin-bottom: 18px; }
+    .output h3 { margin: 0 0 14px; font-size: 22px; }
+    .output p { margin: 0; color: rgba(246,241,232,.64); line-height: 1.8; }
+    .instructor { display: grid; grid-template-columns: .75fr 1.25fr; gap: 58px; align-items: center; }
+    .instructor img { width: 100%; border-radius: 0; aspect-ratio: 4/5; object-fit: cover; object-position: top center; box-shadow: 0 24px 70px rgba(0,0,0,.18); }
+    .profileList { display: grid; gap: 14px; margin: 30px 0 0; padding: 0; list-style: none; color: #4f5b68; line-height: 1.8; }
+    .profileList li:before { content: '✓'; color: var(--gold2); font-weight: 900; margin-right: 10px; }
+    .cta { text-align: center; padding: 86px 0; background: linear-gradient(135deg, #0d1b2e, #183a5a); color: var(--cream); }
+    .cta p { color: rgba(246,241,232,.65); line-height: 1.9; margin: 24px auto 36px; max-width: 650px; }
+    .btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 28px; background: var(--gold); color: #0d1b2e; font-weight: 900; }
+    .btn.ghost { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+    footer { background: #08111f; color: rgba(246,241,232,.48); padding: 28px 0; font-size: 13px; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    @media (max-width: 900px) {
+      .navlinks { display: none; }
+      .hero .wrap, .instructor { grid-template-columns: 1fr; }
+      .portrait { max-width: 460px; }
+      .overview, .cards, .outputs { grid-template-columns: 1fr 1fr; }
+      .session { grid-template-columns: 1fr; gap: 14px; }
+      .badge { justify-self: start; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 32px, 1180px); }
+      .hero { padding: 58px 0 54px; }
+      .heroMeta, .overview, .cards, .outputs { grid-template-columns: 1fr; }
+      .section { padding: 66px 0; }
+      .sectionTitle { display: block; }
+      .lead { margin-top: 18px; }
+      .card, .overview div, .output { padding: 26px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="/">고연심 · DeepCompass AI</a>
+      <div class="navlinks">
+        <a href="#overview">과정개요</a>
+        <a href="#curriculum">커리큘럼</a>
+        <a href="#outputs">결과물</a>
+        <a href="#instructor">강사소개</a>
+        <a href="#contact">문의</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Gimpo City AI Training · 6 Hours</div>
+        <h1>김포시청 임직원을 위한<br>AI 에이전트 실무 교육</h1>
+        <p class="subtitle">생성형 AI를 이해하는 수준을 넘어,<br>공공행정 업무에 바로 적용하는 AI 비서와 자동화 흐름을 설계합니다.</p>
+        <div class="heroMeta">
+          <div class="metaCard"><b>Date</b><span>2026년 5월 21일</span></div>
+          <div class="metaCard"><b>Time</b><span>총 6시간 집중 과정</span></div>
+          <div class="metaCard"><b>Target</b><span>김포시청 임직원 약 30명</span></div>
+          <div class="metaCard"><b>Method</b><span>강의 + 실습 + 결과물 완성</span></div>
+        </div>
+      </div>
+      <div class="portrait"><img src="/portfolio-photo.png" alt="고연심 AI 전문가"></div>
+    </div>
+  </header>
+
+  <section id="overview" class="section">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <div><div class="label">Course Overview</div><h2>교육 과정 개요</h2></div>
+        <p class="lead">공공기관 임직원이 실제 업무에서 AI를 안전하고 생산적으로 활용할 수 있도록, 도구 비교부터 AI 비서 제작·업무 자동화·웹페이지 제작까지 연결합니다.</p>
+      </div>
+      <div class="overview">
+        <div><b>교육명</b><span>AI 에이전트 & 생성형 AI 업무혁신 실무</span></div>
+        <div><b>대상</b><span>김포시청 임직원 약 30명</span></div>
+        <div><b>운영시간</b><span>6시간<br>집중 실습형 과정</span></div>
+        <div><b>핵심방식</b><span>이론보다 실습 중심<br>업무 결과물 완성</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <div><div class="label">Learning Focus</div><h2>교육 핵심 방향</h2></div>
+        <p class="lead">예시 자료의 구조를 벤치마킹하되, 김포시청 임직원 교육에 맞춰 공공행정 실무성과 보안·검증 관점을 강화했습니다.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="num">01</div><h3>AI 플랫폼 실전 비교</h3><ul><li>ChatGPT·Claude·Gemini·GenSpark 차이 이해</li><li>업무 유형별 적합 도구 선택 기준</li><li>동일 과업 결과 비교 실습</li></ul></article>
+        <article class="card"><div class="num">02</div><h3>나만의 AI 비서 설계</h3><ul><li>역할·출력형식·제약조건 구조화</li><li>보고서·회의록·민원 응대용 프롬프트</li><li>부서 업무 맞춤형 AI 비서 제작</li></ul></article>
+        <article class="card"><div class="num">03</div><h3>업무 자동화와 웹 결과물</h3><ul><li>AI 에이전트 단계별 실행법</li><li>자연어 기반 바이브코딩 이해</li><li>간단한 소개 페이지/업무 페이지 제작</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="curriculum" class="section navy">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <div><div class="label">6-Hour Curriculum</div><h2>6시간 커리큘럼</h2></div>
+        <p class="lead">시간표는 현장 운영 상황에 맞춰 조정 가능하며, 전 과정은 강의와 실습을 결합해 진행합니다.</p>
+      </div>
+      <div class="timeline">
+        <article class="session"><div class="time">1교시</div><div><h3>생성형 AI 플랫폼 4대장 비교와 공공업무 활용</h3><p>ChatGPT, Claude, Gemini, GenSpark의 강점과 한계를 비교하고 보도자료·보고서·자료조사 등 공공행정 과업에 적용합니다.</p></div><div class="badge">강의+실습</div></article>
+        <article class="session"><div class="time">2교시</div><div><h3>나만의 AI 업무비서 만들기</h3><p>업무 목적에 맞는 지시문, 출력양식, 검증조건을 설계하고 회의록 정리·민원 응대·보고서 초안용 AI 비서를 구성합니다.</p></div><div class="badge">실습</div></article>
+        <article class="session"><div class="time">3교시</div><div><h3>맞춤지침과 Claude 프로젝트형 업무관리</h3><p>반복 업무에 맞는 맞춤지침을 만들고, 자료 기반 요약·초안 작성·검수 흐름을 설계합니다.</p></div><div class="badge">실습</div></article>
+        <article class="session"><div class="time">4교시</div><div><h3>AI 에이전트 Step-by-Step 실행법</h3><p>리서치 → 정리 → 초안 → 검토 → 시각화의 단계별 실행 구조를 익혀 결과물 품질을 높입니다.</p></div><div class="badge">워크숍</div></article>
+        <article class="session"><div class="time">5교시</div><div><h3>바이브코딩: 자연어로 만드는 업무 페이지</h3><p>코드를 직접 작성하지 않고 AI와 대화하며 기획서, 랜딩페이지, 안내 페이지를 만드는 방식을 실습합니다.</p></div><div class="badge">실습</div></article>
+        <article class="session"><div class="time">6교시</div><div><h3>업무 적용 결과물 완성 및 발표</h3><p>각자 업무 주제에 맞는 AI 활용 결과물을 완성하고, 현장 적용 가능성과 개선 포인트를 함께 점검합니다.</p></div><div class="badge">결과물</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="outputs" class="section dark">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <div><div class="label">Expected Outputs</div><h2>오늘 완성할 결과물</h2></div>
+        <p class="lead">단순 수강이 아니라 교육 종료 후 바로 업무에 참고할 수 있는 산출물을 남기는 과정입니다.</p>
+      </div>
+      <div class="outputs">
+        <div class="output"><b>①</b><h3>업무형 AI 비서 설계안</h3><p>본인 업무에 맞춘 역할, 자료, 출력형식, 검증조건을 갖춘 AI 비서 초안</p></div>
+        <div class="output"><b>②</b><h3>AI 에이전트 실행 보고서</h3><p>단계별 명령과 체크포인트를 포함한 리서치·보고서 자동화 흐름</p></div>
+        <div class="output"><b>③</b><h3>업무 소개용 웹페이지 초안</h3><p>AI 도구로 제작한 부서·사업·정책 안내 페이지 또는 랜딩페이지 초안</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructor" class="section">
+    <div class="wrap instructor">
+      <img src="/portfolio-photo.png" alt="강사 고연심">
+      <div>
+        <div class="label">Instructor</div>
+        <h2>고연심 AI 전문가</h2>
+        <p class="lead" style="margin-top:24px">AI 에이전트, 생성형 AI 업무혁신, 공공기관 맞춤형 디지털 전환 교육을 실습 중심으로 진행합니다.</p>
+        <ul class="profileList">
+          <li>DeepCompass AI 연구소 소장</li>
+          <li>한국인공지능인재개발원 교수</li>
+          <li>ChatGPT·Claude·Gemini·GenSpark 기반 업무 자동화 교육</li>
+          <li>공공기관·기업·교육기관 대상 생성형 AI 실무 강의 다수</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta">
+    <div class="wrap">
+      <div class="label">Contact</div>
+      <h2>김포시청 임직원 AI 교육 제안 페이지</h2>
+      <p>교육 목적과 참석자 수준에 맞춰 세부 실습 주제, 예제 문서, 산출물 템플릿을 조정해 운영할 수 있습니다.</p>
+      <div class="btns">
+        <a class="btn" href="mailto:emas7788@naver.com">이메일 문의</a>
+        <a class="btn ghost" href="tel:01074326833">010-7432-6833</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>고연심 · DeepCompass AI 연구소</span>
+      <span>김포시청 임직원 AI 에이전트 실무 교육 · 2026.05.21</span>
+    </div>
+  </footer>
+</body>
+</html>
