@@ -1,244 +1,32 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Claude 뽀개기 | EANP 기하급수 과정 · 고연심 소장</title>
-    <meta name="description" content="2026년 5월 28일 저녁 8시~10시, EANP 기하급수 과정 Claude 뽀개기 2시간 특강. 고연심 소장과 함께 Claude를 기획·문서·분석·자동화에 바로 활용하는 법을 배웁니다." />
-    <meta name="keywords" content="Claude 뽀개기, 클로드 강의, Claude 강의, EANP 기하급수 과정, 고연심 소장, DeepcompassAI연구소, 고연심AI전문가, AI 에이전트, 생성형 AI 교육, ChatGPT, 업무 자동화" />
-    <meta property="og:title" content="Claude 뽀개기 | EANP 기하급수 과정" />
-    <meta property="og:description" content="5월 28일 저녁 8시~10시, Claude를 기획·문서·분석·자동화에 바로 쓰는 2시간 실전 특강." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://goyeonsim-homepage.vercel.app/claude-528.html" />
-    <meta property="og:image" content="https://goyeonsim-homepage.vercel.app/assets/deep-compass-logo.jpg" />
-    <link rel="icon" href="/assets/deep-compass-logo.jpg" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap');
-      :root {
-        --ink: #141827;
-        --muted: #687087;
-        --orange: #ff5a1f;
-        --gold: #ffb23f;
-        --blue: #1e6cff;
-        --violet: #7c4dff;
-        --navy: #07111f;
-        --card: rgba(255,255,255,.9);
-        --line: rgba(255,255,255,.14);
-      }
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      body {
-        margin: 0;
-        font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        color: white;
-        background:
-          radial-gradient(circle at 82% 12%, rgba(30,108,255,.44), transparent 30%),
-          radial-gradient(circle at 16% 10%, rgba(255,90,31,.34), transparent 28%),
-          radial-gradient(circle at 50% 92%, rgba(124,77,255,.30), transparent 34%),
-          linear-gradient(135deg, #050914, #08182e 48%, #130a24);
-        word-break: keep-all;
-        overflow-wrap: break-word;
-      }
-      body::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        opacity: .18;
-        background-image:
-          linear-gradient(120deg, transparent 0 47%, rgba(255,255,255,.22) 48% 49%, transparent 50%),
-          linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255,255,255,.10) 1px, transparent 1px);
-        background-size: 120px 120px, 42px 42px, 42px 42px;
-      }
-      a { color: inherit; text-decoration: none; }
-      .wrap { position: relative; width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
-      .nav { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 24px 0; }
-      .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -.03em; }
-      .brand img { width: 44px; height: 44px; border-radius: 14px; background: white; object-fit: contain; box-shadow: 0 12px 28px rgba(0,0,0,.18); }
-      .pill { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 18px; border-radius: 999px; background: rgba(255,255,255,.12); border: 1px solid var(--line); font-weight: 800; }
-      .hero { display: grid; grid-template-columns: 1.08fr .92fr; gap: 58px; align-items: center; padding: 70px 0 96px; }
-      .eyebrow { display: inline-flex; margin: 0 0 24px; padding: 12px 18px; border-radius: 999px; background: linear-gradient(135deg, var(--orange), #ff7a2f); font-weight: 900; color: white; box-shadow: 0 18px 44px rgba(255,90,31,.28); }
-      h1 { font-size: clamp(56px, 8vw, 112px); line-height: 1.02; letter-spacing: -.075em; margin: 0; }
-      h1 span { color: var(--orange); }
-      .lead { max-width: 700px; margin: 34px 0 0; color: rgba(255,255,255,.80); font-size: 21px; line-height: 1.9; }
-      .meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 42px; }
-      .metaCard { padding: 22px; border-radius: 26px; background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.16); backdrop-filter: blur(14px); }
-      .metaCard small { display: block; color: var(--gold); font-weight: 900; margin-bottom: 10px; }
-      .metaCard strong { font-size: 22px; line-height: 1.42; }
-      .ctaRow { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 42px; }
-      .button { display: inline-flex; min-height: 58px; align-items: center; justify-content: center; padding: 0 26px; border-radius: 999px; font-weight: 900; }
-      .primary { background: linear-gradient(135deg, var(--orange), var(--gold)); color: #1b1020; box-shadow: 0 18px 44px rgba(255,122,47,.34); }
-      .ghost { border: 1px solid rgba(255,255,255,.20); background: rgba(255,255,255,.10); }
-      .visual { position: relative; }
-      .portrait { position: relative; padding: 22px; border-radius: 42px; background: linear-gradient(145deg, rgba(255,255,255,.18), rgba(255,255,255,.06)); border: 1px solid rgba(255,255,255,.16); box-shadow: 0 30px 100px rgba(0,0,0,.34); }
-      .portrait img { display: block; width: 100%; border-radius: 30px; object-fit: cover; }
-      .badge { position: absolute; right: 36px; bottom: 40px; padding: 14px 18px; border-radius: 999px; background: rgba(255,255,255,.90); color: #171226; font-weight: 900; box-shadow: 0 18px 44px rgba(0,0,0,.20); }
-      section { padding: 92px 0; border-top: 1px solid rgba(255,255,255,.12); }
-      .sectionHead { display: grid; grid-template-columns: .9fr 1.1fr; gap: 46px; align-items: end; margin-bottom: 40px; }
-      .sectionLabel { margin: 0 0 16px; color: var(--gold); font-size: 13px; text-transform: uppercase; letter-spacing: .12em; font-weight: 900; }
-      h2 { font-size: clamp(34px, 5vw, 58px); line-height: 1.18; letter-spacing: -.055em; margin: 0; }
-      .sectionLead { color: rgba(255,255,255,.74); font-size: 19px; line-height: 1.92; margin: 0; }
-      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-      .grid.two { grid-template-columns: repeat(2, 1fr); }
-      .card { min-height: 230px; padding: 30px; border-radius: 30px; background: var(--card); color: var(--ink); box-shadow: 0 24px 70px rgba(0,0,0,.18); }
-      .card span { color: var(--orange); font-weight: 900; }
-      .card h3 { margin: 18px 0 14px; font-size: 25px; letter-spacing: -.035em; line-height: 1.34; }
-      .card p { margin: 0; color: var(--muted); line-height: 1.82; }
-      .why { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-      .whyBox { padding: 34px; border-radius: 34px; background: linear-gradient(145deg, rgba(255,255,255,.14), rgba(255,255,255,.06)); border: 1px solid rgba(255,255,255,.14); }
-      .whyBox h3 { margin: 0 0 16px; font-size: 28px; letter-spacing: -.04em; }
-      .whyBox p { margin: 0; color: rgba(255,255,255,.76); line-height: 1.9; }
-      .timeline { display: grid; gap: 18px; }
-      .step { display: grid; grid-template-columns: 120px 1fr; gap: 22px; padding: 26px; border-radius: 30px; background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.14); }
-      .step strong { color: var(--gold); font-size: 18px; }
-      .step h3 { margin: 0 0 10px; font-size: 25px; letter-spacing: -.035em; }
-      .step p { margin: 0; color: rgba(255,255,255,.74); line-height: 1.82; }
-      .profile { display: grid; grid-template-columns: .82fr 1.18fr; gap: 30px; align-items: center; padding: 34px; border-radius: 40px; background: var(--card); color: var(--ink); }
-      .profile img { width: 100%; border-radius: 30px; box-shadow: 0 20px 60px rgba(0,0,0,.18); }
-      .profile p { color: var(--muted); line-height: 1.86; font-size: 18px; }
-      .profile ul { margin: 26px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; color: #3f4657; font-weight: 700; }
-      .profile li::before { content: '✓'; color: var(--orange); font-weight: 900; margin-right: 10px; }
-      .final { text-align: center; padding-bottom: 112px; }
-      .final .sectionLead { max-width: 740px; margin: 24px auto 0; }
-      footer { color: rgba(255,255,255,.58); padding: 30px 0 46px; text-align: center; }
-      @media (max-width: 860px) {
-        .nav { align-items: flex-start; }
-        .pill { display: none; }
-        .hero, .sectionHead, .why, .profile { grid-template-columns: 1fr; }
-        .hero { padding-top: 44px; }
-        .meta, .grid, .grid.two { grid-template-columns: 1fr; }
-        .portrait { max-width: 440px; margin: 0 auto; }
-        h1 { font-size: clamp(50px, 16vw, 78px); }
-        .step { grid-template-columns: 1fr; }
-        section { padding: 78px 0; }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <nav class="nav">
-        <a class="brand" href="/">
-          <img src="/assets/deep-compass-logo.jpg" alt="Deep Compass AI Lab 로고" />
-          <span>DeepcompassAI연구소</span>
-        </a>
-        <a class="pill" href="/">고연심 소장 홈페이지</a>
-      </nav>
-
-      <main class="hero">
-        <div>
-          <p class="eyebrow">EANP 기하급수 과정 · 2시간 실전 특강</p>
-          <h1>Claude<br /><span>뽀개기</span></h1>
-          <p class="lead">
-            Claude를 단순한 챗봇이 아니라, 기획·문서·분석·자동화의 실전 파트너로 쓰는 법을 배웁니다.
-            고연심 소장이 바로 써먹는 프롬프트와 업무 적용 흐름을 2시간 안에 압축해서 안내합니다.
-          </p>
-          <div class="meta">
-            <div class="metaCard"><small>일시</small><strong>2026년 5월 28일(목)<br />저녁 8시 ~ 10시</strong></div>
-            <div class="metaCard"><small>과정</small><strong>EANP 기하급수 과정<br />Claude 뽀개기</strong></div>
-            <div class="metaCard"><small>강사</small><strong>고연심 소장<br />DeepcompassAI연구소</strong></div>
-            <div class="metaCard"><small>형식</small><strong>온라인 Zoom<br />2시간 실습형 특강</strong></div>
-          </div>
-          <div class="ctaRow">
-            <a class="button primary" href="https://forms.gle/GStfpESe4qdT2cKJA" target="_blank" rel="noreferrer">Claude 뽀개기 신청하기</a>
-            <a class="button ghost" href="#curriculum">커리큘럼 보기</a>
-          </div>
-        </div>
-        <div class="visual">
-          <div class="portrait">
-            <img src="/assets/goyeonsim-profile.jpg" alt="고연심 소장 프로필 사진" />
-            <div class="badge">고연심 소장</div>
-          </div>
-        </div>
-      </main>
-
-      <section>
-        <div class="sectionHead">
-          <div>
-            <p class="sectionLabel">Why Claude</p>
-            <h2>왜 지금 Claude를 배워야 할까요?</h2>
-          </div>
-          <p class="sectionLead">Claude는 긴 문서 이해, 맥락 유지, 구조화된 글쓰기, 분석형 답변에 강한 생성형 AI 도구입니다. 잘 쓰면 기획과 문서 업무의 속도가 확실히 달라집니다.</p>
-        </div>
-        <div class="why">
-          <div class="whyBox"><h3>긴 문서를 빠르게 이해합니다.</h3><p>자료, 보고서, 강의안, 회의록을 읽고 핵심을 뽑아내는 데 강합니다.</p></div>
-          <div class="whyBox"><h3>생각을 구조화해줍니다.</h3><p>아이디어를 목차, 기획안, 제안서, 실행계획으로 바꾸는 데 유용합니다.</p></div>
-        </div>
-      </section>
-
-      <section id="curriculum">
-        <div class="sectionHead">
-          <div>
-            <p class="sectionLabel">Curriculum</p>
-            <h2>2시간 안에 배우는 핵심</h2>
-          </div>
-          <p class="sectionLead">기능 설명보다 “어떻게 질문하고, 어떤 결과물을 만들 것인가”에 집중합니다.</p>
-        </div>
-        <div class="timeline">
-          <div class="step"><strong>Part 01</strong><div><h3>Claude 핵심 기능과 업무 활용 포인트</h3><p>Claude가 잘하는 일과 ChatGPT와의 차이를 실무 관점에서 정리합니다.</p></div></div>
-          <div class="step"><strong>Part 02</strong><div><h3>결과가 달라지는 프롬프트 구조</h3><p>역할, 목표, 맥락, 조건, 출력 형식을 잡아 안정적인 결과를 얻는 법을 배웁니다.</p></div></div>
-          <div class="step"><strong>Part 03</strong><div><h3>문서·기획·분석 실습</h3><p>보고서 요약, 강의안 구성, 리서치 정리, 콘텐츠 기획에 Claude를 적용합니다.</p></div></div>
-          <div class="step"><strong>Part 04</strong><div><h3>나만의 업무 자동화 흐름 만들기</h3><p>반복 업무를 줄이는 Claude 활용 루틴과 프롬프트 템플릿을 설계합니다.</p></div></div>
-        </div>
-      </section>
-
-      <section>
-        <div class="sectionHead">
-          <div>
-            <p class="sectionLabel">For Whom</p>
-            <h2>이런 분께 추천합니다</h2>
-          </div>
-          <p class="sectionLead">AI를 써본 적은 있지만, 업무에 제대로 붙이지 못했던 분들에게 특히 좋습니다.</p>
-        </div>
-        <div class="grid">
-          <article class="card"><span>01</span><h3>실무자·기획자</h3><p>문서, 리서치, 기획, 보고 업무 시간을 줄이고 싶은 분</p></article>
-          <article class="card"><span>02</span><h3>강사·교육자</h3><p>강의안, 커리큘럼, 실습 자료 제작에 Claude를 활용하고 싶은 분</p></article>
-          <article class="card"><span>03</span><h3>리더·1인기업</h3><p>AI를 업무 생산성과 의사결정에 연결하고 싶은 분</p></article>
-        </div>
-      </section>
-
-      <section>
-        <div class="sectionHead">
-          <div>
-            <p class="sectionLabel">Outcome</p>
-            <h2>강의 후 가져가는 것</h2>
-          </div>
-          <p class="sectionLead">그냥 듣고 끝나는 강의가 아니라, 다음 날 바로 다시 써볼 수 있는 활용 흐름을 가져갑니다.</p>
-        </div>
-        <div class="grid two">
-          <article class="card"><span>Result 01</span><h3>Claude 실전 사용 감각</h3><p>어떤 업무에 Claude를 쓰면 좋은지 판단하는 기준을 갖게 됩니다.</p></article>
-          <article class="card"><span>Result 02</span><h3>업무형 프롬프트 템플릿</h3><p>문서, 기획, 분석, 콘텐츠 제작에 응용할 수 있는 질문 구조를 익힙니다.</p></article>
-        </div>
-      </section>
-
-      <section>
-        <div class="profile">
-          <img src="/assets/goyeonsim-profile.jpg" alt="고연심 소장" />
-          <div>
-            <p class="sectionLabel">Lecturer</p>
-            <h2>고연심 소장</h2>
-            <p>DeepcompassAI연구소 소장이자 한국인공지능인재개발원 교수. 생성형 AI 교육, AI 에이전트, ChatGPT·Claude·Gemini 활용, 업무 자동화 교육을 현장 중심으로 진행합니다.</p>
-            <ul>
-              <li>DeepcompassAI연구소 소장 / Founder</li>
-              <li>한국인공지능인재개발원 교수</li>
-              <li>고연심AI전문가 · AI에이전트 전문가</li>
-              <li>기관·기업 맞춤 생성형 AI 교육 진행</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="final">
-        <p class="sectionLabel">Apply Now</p>
-        <h2>Claude를 제대로 쓰면<br />업무의 속도가 달라집니다.</h2>
-        <p class="sectionLead">5월 28일 저녁, Claude를 실전 업무 파트너로 만드는 방법을 함께 익혀보세요. Zoom 주소는 신청자에게 별도 안내하는 방식이 안전합니다.</p>
-        <div class="ctaRow" style="justify-content:center">
-          <a class="button primary" href="https://forms.gle/GStfpESe4qdT2cKJA" target="_blank" rel="noreferrer">Claude 뽀개기 신청하기</a>
-          <a class="button ghost" href="tel:01074326833">010-7432-6833</a>
-        </div>
-      </section>
-
-      <footer>DeepcompassAI연구소 · 고연심 소장 · Claude 뽀개기 특강</footer>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EANP 클로드AI 2시간 특강 | 고연심 소장</title>
+  <meta name="description" content="2026년 5월 28일 EANP 대상 Claude AI 2시간 특강. 모델 선택, 맞춤 설정, 딥리서치, 아티팩트, 프로젝트와 스킬까지 실습 중심으로 배웁니다.">
+  <meta name="keywords" content="EANP, 클로드AI, Claude 강의, Claude 뽀개기, 고연심, 고연심AI전문가, DeepcompassAI연구소, 생성형 AI 교육, AI 업무 자동화">
+  <meta property="og:title" content="EANP 클로드AI 2시간 특강">
+  <meta property="og:description" content="단순한 채팅을 넘어 Claude를 AI 업무 시스템으로 활용하는 2시간 실전 강의">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://goyeonsim-homepage.vercel.app/eanp-claude-ai.html">
+  <meta property="og:image" content="https://goyeonsim-homepage.vercel.app/assets/gimpo-ai-lecture-hero.jpg">
+  <link rel="icon" href="/assets/deep-compass-logo.jpg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap');
+    :root{--navy:#071633;--blue:#1d5cff;--sky:#eaf3ff;--ink:#16213a;--muted:#647089;--line:#e5ebf5;--bg:#f6f9ff;--card:#fff;--orange:#ff7a1a;--green:#12b981}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);word-break:keep-all;overflow-wrap:break-word} a{text-decoration:none;color:inherit}.wrap{width:min(100% - 44px,1120px);margin:0 auto}.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}.brand{font-weight:900;color:var(--navy);letter-spacing:-.03em}.links{display:flex;gap:24px;color:var(--muted);font-weight:700;font-size:15px}.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#eef6ff 0%,#f8fbff 48%,#fff7ed 100%);padding:86px 0 78px}.hero:before{content:'';position:absolute;inset:auto -120px -180px auto;width:520px;height:520px;border-radius:50%;background:rgba(29,92,255,.12)}.heroGrid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.badgeTop{display:inline-flex;padding:10px 16px;border-radius:999px;background:#dbeafe;color:#1746b8;font-weight:900;font-size:13px;letter-spacing:.08em;margin-bottom:20px}h1{font-size:clamp(42px,6.4vw,76px);line-height:1.05;letter-spacing:-.065em;margin:0;color:var(--navy)}h1 span{color:var(--blue)}.hero p{font-size:20px;line-height:1.8;color:#40506e;margin:24px 0 0;max-width:650px}.heroActions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:16px;background:var(--blue);color:white;font-weight:900;box-shadow:0 18px 34px rgba(29,92,255,.22)}.btn.ghost{background:white;color:var(--navy);border:1px solid var(--line);box-shadow:0 18px 34px rgba(8,20,42,.08)}.heroCard{background:white;border:1px solid var(--line);border-radius:30px;padding:18px;box-shadow:0 28px 80px rgba(14,35,68,.14)}.heroCard img{width:100%;display:block;border-radius:22px;aspect-ratio:4/3;object-fit:cover}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}.stat{padding:16px;border-radius:18px;background:#f4f8ff}.stat b{display:block;color:var(--blue);font-size:13px;margin-bottom:8px}.stat span{font-weight:800;color:var(--navy)}section{padding:76px 0}.sectionHead{text-align:center;max-width:760px;margin:0 auto 38px}.label{color:var(--blue);font-weight:900;font-size:13px;letter-spacing:.12em;margin-bottom:12px}h2{font-size:clamp(30px,4.8vw,48px);line-height:1.18;letter-spacing:-.05em;margin:0;color:var(--navy)}.sectionHead p{font-size:18px;line-height:1.75;color:var(--muted);margin:16px 0 0}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:0 16px 44px rgba(14,35,68,.07)}.icon{font-size:34px;margin-bottom:18px}.card h3{font-size:21px;letter-spacing:-.035em;margin:0 0 12px;color:var(--navy)}.card p,.card li{line-height:1.7;color:var(--muted);margin:0}.card ul{padding-left:19px;margin:0}.curriculum{background:white}.chapters{display:grid;gap:14px}.chapter{display:grid;grid-template-columns:110px 1fr 110px;gap:22px;align-items:center;padding:24px;border:1px solid var(--line);border-radius:24px;background:#fbfdff}.time{font-weight:900;color:var(--blue);font-size:20px}.chapter h3{margin:0 0 8px;color:var(--navy);font-size:21px}.chapter p{margin:0;color:var(--muted);line-height:1.65}.pill{justify-self:end;padding:9px 13px;border-radius:999px;background:#eef4ff;color:#1b55d9;font-weight:900;font-size:13px}.materials{background:linear-gradient(180deg,#f6f9ff,#fff)}.promptBox{background:#071633;color:#eaf3ff;border-radius:28px;padding:30px;box-shadow:0 24px 70px rgba(7,22,51,.22);line-height:1.8}.promptBox b{color:#8ec5ff}.profile{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:center;background:white;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:0 20px 54px rgba(14,35,68,.08)}.profile img{width:100%;border-radius:24px}.profile h3{font-size:30px;margin:0 0 12px;color:var(--navy)}.profile p{line-height:1.8;color:var(--muted);margin:0}.contact{background:#071633;color:white}.contact h2{color:white}.contact .sectionHead p{color:#c7d2e5}.contactGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contactItem{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:22px}.contactItem b{display:block;color:#93c5fd;margin-bottom:10px}footer{padding:28px 0;background:#050d1d;color:#9aa8bf;text-align:center;font-size:14px}@media(max-width:900px){.links{display:none}.heroGrid,.profile{grid-template-columns:1fr}.grid4,.grid3{grid-template-columns:repeat(2,1fr)}.chapter{grid-template-columns:1fr}.pill{justify-self:start}.contactGrid{grid-template-columns:1fr}}@media(max-width:560px){.wrap{width:min(100% - 30px,1120px)}.hero{padding:46px 0}.grid4,.grid3{grid-template-columns:1fr}section{padding:58px 0}.card,.profile{padding:22px;border-radius:22px}.stats{grid-template-columns:1fr}.heroActions .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap"><a class="brand" href="/">EANP 클로드AI 특강</a><div class="links"><a href="#overview">강의개요</a><a href="#curriculum">커리큘럼</a><a href="#practice">실습</a><a href="#instructor">강사소개</a><a href="#contact">문의</a></div></div></nav>
+  <header class="hero"><div class="wrap heroGrid"><div><div class="badgeTop">CLAUDE AI · WORK OS · 2H SPECIAL</div><h1>클로드AI<br><span>300% 활용법</span></h1><p>단순한 채팅을 넘어 Claude를 나의 업무 시스템으로 활용하는 2시간 실전 강의입니다. 모델 선택, 맞춤 설정, 문서 분석, 아티팩트, 프로젝트와 스킬까지 바로 써먹을 수 있게 압축합니다.</p><div class="heroActions"><a class="btn" href="/assets/eanp-claude-ai-2026-05-28.pdf" target="_blank" rel="noopener">강의 자료 보기</a><a class="btn ghost" href="#curriculum">2시간 커리큘럼 보기</a></div></div><aside class="heroCard"><img src="/assets/gimpo-ai-lecture-hero.jpg" alt="AI 교육을 진행하는 고연심 소장 강의 이미지"><div class="stats"><div class="stat"><b>교육일</b><span>2026년 5월 28일</span></div><div class="stat"><b>교육시간</b><span>총 2시간</span></div><div class="stat"><b>대상</b><span>EANP 수강생</span></div><div class="stat"><b>강사</b><span>고연심 소장</span></div></div></aside></div></header>
+  <section id="overview"><div class="wrap"><div class="sectionHead"><div class="label">OVERVIEW</div><h2>Claude를 AI 업무 운영 시스템으로 전환합니다</h2><p>Claude의 핵심은 질문 답변이 아니라 Memory, Projects, Skills, Artifacts를 연결해 반복 가능한 업무 흐름을 만드는 것입니다.</p></div><div class="grid4"><article class="card"><div class="icon">🤖</div><h3>모델 선택</h3><p>Opus·Sonnet·Haiku의 차이를 이해하고 업무 성격에 맞게 선택합니다.</p></article><article class="card"><div class="icon">🧠</div><h3>맞춤 설정</h3><p>프로필, 응답 스타일, 메모리로 나에게 맞는 Claude 환경을 만듭니다.</p></article><article class="card"><div class="icon">📊</div><h3>아티팩트</h3><p>문서, 표, 차트, 시각화 결과물을 대화창에서 바로 확인합니다.</p></article><article class="card"><div class="icon">🛠️</div><h3>자동화 구조</h3><p>Projects와 Skills로 반복 업무를 표준화하고 품질을 안정화합니다.</p></article></div></div></section>
+  <section id="curriculum" class="curriculum"><div class="wrap"><div class="sectionHead"><div class="label">CURRICULUM</div><h2>EANP 클로드AI 2시간 커리큘럼</h2><p>핵심 설명은 짧게, 실습은 바로 따라 할 수 있게 구성했습니다.</p></div><div class="chapters"><article class="chapter"><div class="time">0:00</div><div><h3>Claude란 무엇인가</h3><p>Anthropic, Claude의 강점, ChatGPT와의 차이, Work OS 관점 이해</p></div><span class="pill">도입</span></article><article class="chapter"><div class="time">0:15</div><div><h3>모델·플랜 선택 전략</h3><p>Opus, Sonnet, Haiku / Free, Pro, Max를 업무 목적에 맞게 선택</p></div><span class="pill">핵심</span></article><article class="chapter"><div class="time">0:35</div><div><h3>개인 맞춤 Claude 만들기</h3><p>프로필, 맞춤 지침, 메모리, 채팅 기록 참조 설정 실습</p></div><span class="pill">실습</span></article><article class="chapter"><div class="time">1:00</div><div><h3>딥리서치·문서 분석·아티팩트</h3><p>자료 업로드 후 요약, 보고서, 표, 시각화 결과물 생성</p></div><span class="pill">실습</span></article><article class="chapter"><div class="time">1:35</div><div><h3>Projects와 Skills 업무 자동화</h3><p>업무별 전용 공간과 반복 업무 스킬 구조를 이해하고 적용 사례 확인</p></div><span class="pill">응용</span></article><article class="chapter"><div class="time">1:55</div><div><h3>Claude 활용 공식 정리</h3><p>Memory + Projects + Skills = 나만의 AI 전담팀</p></div><span class="pill">정리</span></article></div></div></section>
+  <section id="practice" class="materials"><div class="wrap"><div class="sectionHead"><div class="label">PRACTICE</div><h2>수업에서 완성할 결과물</h2><p>수강생이 강의 후 바로 자신의 업무에 적용할 수 있는 산출물을 만듭니다.</p></div><div class="grid3"><article class="card"><div class="icon">📝</div><h3>내 Claude 맞춤 지침</h3><ul><li>나의 역할과 업무 입력</li><li>응답 스타일 지정</li><li>금지사항·출력 형식 설정</li></ul></article><article class="card"><div class="icon">📄</div><h3>문서 분석 보고서</h3><ul><li>PDF·PPT 자료 요약</li><li>핵심 인사이트 추출</li><li>표와 체크리스트 생성</li></ul></article><article class="card"><div class="icon">⚙️</div><h3>업무 자동화 설계</h3><ul><li>Project 구성안</li><li>Skill 아이디어</li><li>반복 업무 프롬프트</li></ul></article></div></div></section>
+  <section><div class="wrap"><div class="sectionHead"><div class="label">PROMPT SAMPLE</div><h2>실습 프롬프트 예시</h2><p>Claude에 그대로 입력해 개인 맞춤형 업무 비서 설정을 시작합니다.</p></div><div class="promptBox"><b>Claude 개인 맞춤 지침 생성 프롬프트</b><br><br>나는 [직업/역할]로 일하고 있고, 주로 [주요 업무]를 합니다.<br>Claude가 나의 업무 파트너처럼 답변하도록 맞춤 지침을 작성해주세요.<br>포함할 내용: 역할, 말투, 자주 하는 업무, 출력 형식, 주의사항, 검토 기준.<br>결과는 Claude 프로필 설정에 붙여넣기 좋은 형태로 정리해주세요.</div></div></section>
+  <section id="instructor"><div class="wrap"><div class="profile"><img src="/assets/goyeonsim-profile.jpg" alt="고연심 소장 프로필 사진"><div><div class="label">INSTRUCTOR</div><h3>고연심 소장</h3><p>DeepcompassAI연구소 소장. 생성형 AI, ChatGPT, Claude, AI 에이전트, 업무 자동화 교육을 공공기관·기업·교육기관 대상으로 진행합니다. 복잡한 AI 기능을 현장에서 바로 쓸 수 있는 실습형 강의로 연결합니다.</p></div></div></div></section>
+  <section id="contact" class="contact"><div class="wrap"><div class="sectionHead"><div class="label">CONTACT</div><h2>강의 문의</h2><p>기관과 대상에 맞춘 Claude AI·생성형 AI 실무 교육으로 구성할 수 있습니다.</p></div><div class="contactGrid"><div class="contactItem"><b>강의명</b>EANP 클로드AI 2시간 특강</div><div class="contactItem"><b>기관</b>DeepcompassAI연구소</div><div class="contactItem"><b>이메일</b>emas7788@naver.com</div></div></div></section>
+  <footer>© DeepcompassAI연구소 · 고연심AI전문가</footer>
+</body>
 </html>
